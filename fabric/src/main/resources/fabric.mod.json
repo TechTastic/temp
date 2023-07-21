@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "valkyrien_computers",
+  "version": "${version}",
+  "name": "Valkyrien Computers",
+  "description": "This is an example description! Tell everyone what your mod is about!",
+  "authors": [
+    "TechTastic"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+  "license": "MIT License",
+  "icon": "assets/valkyrien_computers/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "io.github.techtastic.valkyrien_computers.fabric.ValkyrienComputersModFabric"
+    ],
+    "client": [
+      "io.github.techtastic.valkyrien_computers.fabric.ValkyrienComputersModFabric${'$'}Client"
+    ]
+  },
+  "mixins": [
+    "valkyrien_computers.mixins.json",
+    "valkyrien_computers-common.mixins.json"
+  ],
+  "depends": {
+    "fabric": "*",
+    "minecraft": ">=1.18.2",
+    "architectury": ">=4.11.91"
+  }
+}
